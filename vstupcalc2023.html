@@ -13,6 +13,10 @@
         body {
             font-family: Ubuntu;
         }
+        
+        code {
+            color: #007bff;
+        }
     </style>
 </head>
 
@@ -20,7 +24,7 @@
     <div class="text-center mt-4 mb-4 ml-4 mr-4">
         <h3 class="mb-0">РОЗРАХУНОК КОНКУРСНОГО БАЛУ</h3>
         <h2 class="mb-0"><b>НМТ-2023</b></h2>
-        <p class="text-muted"><code>Галузь <b>12 — Інформаційні технології</b></code></p>
+        <p class="text-muted"><code><b>Галузь 12 — Інформаційні технології</b></code></p>
 
         <form class="mt-4 mb-4" id="calcKB">
             <div class="form-group">
@@ -45,10 +49,10 @@
                 <input type="number" min="0" max="200" step="1" class="form-control" id="p3" required="true" placeholder="Оцінка (П3)">
             </div>
             <div class="form-group">
-                <code><b>Конкурсний бал (КБ)</b> = (К1 × П1 + К2 × П2 + К3 × П3) / (К1 + К2 + К3)</b></code>
+                <code><b>Конкурсний бал (КБ) = (К1 × П1 + К2 × П2 + К3 × П3) / (К1 + К2 + К3)</b></code>
             </div>
 
-            <button type="submit" class="btn btn-danger btn-block">Розрахувати</button>
+            <button type="submit" class="btn btn-warning btn-block">Розрахувати</button>
         </form>
 
         <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
